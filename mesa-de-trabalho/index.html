@@ -47,18 +47,24 @@
         `;
         // Crie as funções a partir daqui.
 
-        //  1. Crie uma função para buscar qual o index da primeira palavra Mengo.
-            console.log(letraDaMusica.indexOf('Mengo'));
-
+         //  1. Crie uma função para buscar qual o index da primeira palavra Mengo.
+        function buscarMengo(){
+            console.log(letraDaMusica.indexOf("Mengo"))
+        }
         // 2. Crie uma função para substituir o nome Mengo por outro nome de Time.
-            console.log(letraDaMusica.replace('Mengo', 'Flamengo'));
-        // 3. Crie uma função para contar quantos caracteres existem no texto. 
+        function substituirMengo(){
+            console.log(letraDaMusica.replaceAll("Mengo", "teste"))
+        }
+         // 3. Crie uma função para contar quantos caracteres existem no texto. 
         //    Obs.: Contando com apenas os espaços entre as letras, espaços entre paragrafos não devem ser calculados).
-            var novaLetra = letraDaMusica.trim();
-            console.log(novaLetra.slice());
+        function contarCaracteres(){
+            console.log(letraDaMusica.trim().length);
+        }
 
-        //    4. Crie uma função para contar quantas palavras existem no texto.
-            console.log(letraDaMusica.length);
+         //    4. Crie uma função para contar quantas palavras existem no texto.
+        function contarPalavras(){
+            console.log(letraDaMusica.trim().split(" ").length+1);
+        }
 
             /* Sala 09
             Anderson silva
